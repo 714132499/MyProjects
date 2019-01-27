@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0,shrink-to-fit=no,maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./favicon.ico"/>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="./css/main.less">
+    <script src="../../js/less.min.js"></script>
+    <title>实战者</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<!--header-->
+<header>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!--部分1：导航条头部 = 品牌商标 + 汉堡包按钮-->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">TARENA</a>
+                <a class="navbar-toggle" href="#my-menu" data-toggle="collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+            </div>
+
+            <!--部分2：导航条折叠部分 = 导航 + 超链接 + 按钮 + 文本 + 表单 ...-->
+            <div id="my-menu" class="collapse navbar-collapse">
+                <!--导航条中的导航/菜单-->
+                <!--<ul class="nav navbar-nav navbar-right">-->
+                <ul class="nav navbar-nav">
+                    <li><a href="#">首页</a></li>
+                    <li class="active"><a href="#">新闻</a></li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" href="#">产品大全<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">冰箱</a></li>
+                            <li><a href="#">洗衣机</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">奶粉</a></li>
+                            <li><a href="#">尿不湿</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<section id="swiper">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1000/1000/nightlife/1)"></div>
+            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1000/1000/nightlife/2)"></div>
+            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1000/1000/nightlife/3)"></div>
+            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1000/1000/nightlife/4)"></div>
+            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1000/1000/nightlife/5)"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next hidden-xs"></div>
+        <div class="swiper-button-prev hidden-xs"></div>
+    </div>
+</section>
+
+
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/swiper.min.js"></script>
+<script src="./js/index.js"></script>
+<script>
+
+</script>
+</body>
+</html>

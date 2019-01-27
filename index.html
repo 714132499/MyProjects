@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>myProject</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/resetCss.css">
+    <link rel="stylesheet" href="./css/fullpage.min.css">
+    <link rel="stylesheet" href="./css/themes/blue/pace-theme-flash.css">
+    <link rel="stylesheet" type="text/less" href="./css/index.less">
+    <script src="./js/less.min.js"></script>
+    <!--[if IE]>
+    <script type="text/javascript">
+        var console = {
+            log: function () {
+            }
+        };
+    </script>
+    <![endif]-->
+</head>
+<body>
+
+
+<div id="head">
+    <img src="./imgs/paused.png" alt="" id="headImg" class="">
+    <audio loop src="./resource/music.mp3" id="audio" type="audio/mpeg" autoplay hidden></audio>
+</div>
+<div id="taiji"></div>
+<div id="fullpage">
+    <div class="section " id="section0">
+        2111111
+    </div>
+    <div class="section" id="section1">
+        <div class="slide" id="slide1"><h1>Slide Backgrounds</h1></div>
+        <div class="slide" id="slide2"><h1>Totally customizable</h1></div>
+    </div>
+    <div class="section" id="section2">
+        <h1>22222</h1>
+    </div>
+</div>
+<script src="./js/jquery.min.js" type="application/javascript"></script>
+<script src="./js/pace.min.js"></script>
+<script src="./js/fullpage.min.js"></script>
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        // verticalCentered: false,
+        navigation: true,
+        navigationTooltips: ['boot', 'Page 2', 'Any text!'],
+        showActiveTooltip: true,
+        fixedElements: '#head',
+    });
+$(function(){
+    var paus = document.getElementById('audio');
+    if (paus.paused) {
+        $('#headImg').attr("src", "./imgs/paused.png").removeClass('play');
+        paus.pause();
+    } else {
+        $('#headImg').attr('src', './imgs/play.png').addClass('play');
+        paus.play();
+    }
+    $('#headImg').click(function () {
+        var paus = document.getElementById('audio');
+        if (paus.paused) {
+            $('#headImg').attr("src", "./imgs/play.png");
+            $(this).addClass('play');
+            paus.play();
+        } else {
+            $(this).removeClass('play');
+            $('#headImg').attr('src', './imgs/paused.png');
+            paus.pause();
+        }
+    })
+})
+
+
+
+</script>
+</body>
+</html>

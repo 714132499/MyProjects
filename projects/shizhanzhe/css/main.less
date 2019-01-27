@@ -1,12 +1,55 @@
 @charset "UTF-8";
-.navbar-light .navbar-nav .active>.nav-link {
+.navbar-light .navbar-nav .active > .nav-link {
   color: rgba(36, 124, 236, 0.9);
 }
-.navbar-brand{
-  margin-right: 10rem;
+
+.navbar-brand {
+  padding: 0;
+  padding-top: 10px;
 }
+
+.navbar-header img {
+  height: 35px;
+}
+
 #swiper {
   height: 500px;
+  margin-top: 50px;
+}
+@media screen and (min-width: 768px) {
+  .navbar-nav {
+    float: right;
+  }
+}
+@media screen and (max-width: 755px) {
+  #swiper {
+    height: 260px;
+  }
+
+  .navbar > .container .navbar-brand {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 756px) add (max-width: 1600px) {
+  #swiper {
+    height: 350px;
+  }
+
+  .navbar > .container .navbar-brand {
+    margin-left: 20px;
+  }
+}
+
+
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+  color: #1762af;
+  background-color: #f8f8f8;
+}
+
+.navbar-default .navbar-nav > li > a {
+  font-size: 16px;
 }
 
 .swiper-container {
@@ -39,3 +82,5 @@
   background-position: center;
   background-size: 100% 100%;
 }
+
+

@@ -7,15 +7,64 @@
 }
 
 #section0 {
-  //background-image: url(../imgs/bg1.jpg);
+  background-image: url(../imgs/bg0.jpg);
+  //position: absolute;
+  .img {
+    height: 40%;
+    width: 15%;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .img1 {
+    left: 0;
+  }
+  .img1.imgAni1 {
+    animation: left 2s;
+    -moz-animation: left 2s;
+    -webkit-animation: left 2s;
+  }
+  .img2 {
+    right: 0;
+  }
+  .img2.imgAni2 {
+    animation: right 2s;
+    -moz-animation: right 2s;
+    -webkit-animation: right 2s;
+  }
+  .img3 {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .img3.imgAni3 {
+    animation: bottom 3s;
+    -moz-animation: bottom 3s;
+    -webkit-animation: bottom 3s;
+  }
+}
+
+@media screen and  (max-width: 880px) {
+  #section0 {
+    .img {
+      height: 20%;
+    }
+    .img3 {
+      width: 90%;
+    }
+
+  }
 }
 
 #section1 {
-  background-image: url(../imgs/bg3.jpg);
+  background-image: url(../imgs/bg1.jpg);
 }
 
 #section2 {
-  background-image: url(../imgs/bg4.jpg);
+  background-image: url(../imgs/bg2.jpg);
 }
 
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
@@ -24,8 +73,12 @@
   width: 6px
 }
 
+/*
+第一屏
+*/
 //太极
 #taiji {
+  z-index: 5;
   position: fixed;
   top: 10px;
   left: 10px;
@@ -41,8 +94,8 @@
     width: 15px;
     height: 15px;
     background: #fff;
-    border:7.5px solid #000000;
-    border-radius:50px;
+    border: 7.5px solid #000000;
+    border-radius: 50px;
     position: absolute;
     top: 0px;
     left: -15px
@@ -52,8 +105,8 @@
     width: 15px;
     height: 15px;
     background: #000;
-    border:7.5px solid #fff;
-    border-radius:50px;
+    border: 7.5px solid #fff;
+    border-radius: 50px;
     position: absolute;
     bottom: 0px;
     left: -15px
@@ -69,7 +122,7 @@
   height: 60px;
   width: 60px;
   z-index: 99;
-  &:hover{
+  &:hover {
     cursor: pointer;
   }
   #headImg {
@@ -80,13 +133,126 @@
 
 .play {
   animation: play 3s linear infinite;
+  -webkit-animation: play 3s linear infinite;
 }
 
+.shizhanzhe {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  top: 100px
+}
+
+//太极、音乐
 @keyframes play {
   from {
     transform: rotate(0deg)
   }
   to {
     transform: rotate(360deg)
+  }
+}
+
+@-moz-keyframes play {
+  from {
+    transform: rotate(0deg)
+  }
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+@-webkit-keyframes play {
+  from {
+    transform: rotate(0deg)
+  }
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+//第一屏动画
+@keyframes left {
+  0% {
+    left: -170px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@-moz-keyframes left {
+  0% {
+    left: -170px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@-webkit-keyframes left {
+  0% {
+    left: -170px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes right {
+  0% {
+    right: -170px;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+@-moz-keyframes right {
+  0% {
+    right: -170px;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+@-webkit-keyframes right {
+  0% {
+    right: -170px;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes bottom {
+  0% {
+    bottom: -340px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@-webkit-keyframes bottom {
+  0% {
+    bottom: -340px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@-moz-keyframes bottom {
+  0% {
+    bottom: -340px;
+  }
+  50% {
+    bottom: -340px;
+  }
+  100% {
+    bottom: 0;
   }
 }

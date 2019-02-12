@@ -16,21 +16,8 @@
     top: 50%;
     transform: translateY(-50%);
   }
-  .img1 {
-    left: 0;
-  }
-  .img1.imgAni1 {
-    animation: left 2s;
-    -moz-animation: left 2s;
-    -webkit-animation: left 2s;
-  }
-  .img2 {
-    right: 0;
-  }
-  .img2.imgAni2 {
-    animation: right 2s;
-    -moz-animation: right 2s;
-    -webkit-animation: right 2s;
+  .img1{
+    left: -180px;
   }
   .img3 {
     position: fixed;
@@ -169,90 +156,5 @@
   }
   to {
     transform: rotate(360deg)
-  }
-}
-
-//第一屏动画
-@keyframes left {
-  0% {
-    left: -170px;
-  }
-  100% {
-    left: 0;
-  }
-}
-
-@-moz-keyframes left {
-  0% {
-    left: -170px;
-  }
-  100% {
-    left: 0;
-  }
-}
-
-@-webkit-keyframes left {
-  0% {
-    left: -170px;
-  }
-  100% {
-    left: 0;
-  }
-}
-
-@keyframes right {
-  0% {
-    right: -170px;
-  }
-  100% {
-    right: 0;
-  }
-}
-
-@-moz-keyframes right {
-  0% {
-    right: -170px;
-  }
-  100% {
-    right: 0;
-  }
-}
-
-@-webkit-keyframes right {
-  0% {
-    right: -170px;
-  }
-  100% {
-    right: 0;
-  }
-}
-
-@keyframes bottom {
-  0% {
-    bottom: -340px;
-  }
-  100% {
-    bottom: 0;
-  }
-}
-
-@-webkit-keyframes bottom {
-  0% {
-    bottom: -340px;
-  }
-  100% {
-    bottom: 0;
-  }
-}
-
-@-moz-keyframes bottom {
-  0% {
-    bottom: -340px;
-  }
-  50% {
-    bottom: -340px;
-  }
-  100% {
-    bottom: 0;
   }
 }
